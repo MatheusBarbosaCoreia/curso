@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@font-face {
+            font-family: 'Burn';
+            src: url('./fontes/Burn.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;}
+@font-face {
+            font-family: 'Naruto';
+            src: url('./fontes/HarutoPersonalUse-gwM5R.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;}
+@font-face {
+            font-family: 'Dragon';
+            src: url('./fontes/Saiyan-Sans.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;}
+@font-face {
+            font-family: 'Jojo';
+            src: url('./fontes/SF\ Fedora\ Shadow.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;}
+@font-face {
+            font-family: 'Solo';
+            src: url('./fontes/SoloLevelDemo.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;}
+@font-face {
+            font-family: 'Vanguards';
+            src: url('./fontes/Fonstars-4Bo0p.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;}
+@font-face {
+            font-family: 'Menu';
+            src: url('./fontes/PowerOfDragonRegular-axZom.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;}
+@font-face {
+            font-family: 'Titulo';
+            src: url('./fontes/AttackOnCourier-5nJz.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;}
+
+/*Configuração Global do p */            
+* p,ul,h2,img,iframe{
+    text-align: justify;
+    width: 100% ;
+    max-width: 470px;
+    color: white;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+}
+/*Cor de Fundo*/
+body{
+    background-color: #c2d0f5;
+}
+
+/*Remove a parte colada ao menu*/
+body{
+    margin: 0px;
+}
+
+/*Configuração do bloco de texto*/
+main {
+    display: flex;/* coloca as colunas lado a lado */
+    gap: 20px;         /* espaço entre elas */
+    align-items: flex-start; /* alinha pelo topo */
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.882),rgba(0, 0, 0, 0.882));
+    box-shadow: 0px 0px 10px rgb(0,0,0.418) ;
+    margin-top: 30px;
+    border-radius: 10px 10px 10px 10px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 40px; 
+    box-shadow: 0px 4px 11px 5px rgb(10 10 10 / 58%);
+    
+    
+}
+
+/*Configurações do Menu*/
+header {
+    background-image: linear-gradient(to bottom,#000000,#1b2645);
+    padding: 5px 0px 30px 0px;
+    text-align: center;
+    box-shadow: 0px 4px 11px 5px rgb(10 10 10 / 58%);
+}
+
+header > h1{
+    color: rgb(252, 251, 251);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Vanguards';
+    font-weight: 100;
+}
+
+nav > a{
+    color: white;
+    padding: 0px 30px 0px 10px;
+    text-decoration: none; 
+    font-size: large;
+    font-family: 'Menu';
+    font-size: 25px;
+    transition-duration: 1s;
+}
+nav > a:hover{
+    color: #f3f4f7;
+    background-color: #132ea8 ;
+    border-radius: 10px 10px;
+}
+
+hr {
+    border: none;           /* remove estilo padrão */
+    height: 1px;            /* espessura */
+    background-color: #0e4cee;   /* cor da linha */
+    margin: 5px ;         /* espaço acima e abaixo */
+    border-radius: 2px;    /* deixa arredondado */
+}
+
+
+.coluna1, .coluna2 {
+    flex: 1 1 ;/* cada coluna ocupa metade da tela */
+    max-width: 60%;/* garante que fiquem equilibradas */
+}
+.coluna1{
+    margin-left:50px;
+}
+.coluna2{
+    margin-left:50px;
+}
+
+.coluna1 >  a ,#teste >  a , .coluna2 > a {
+    color: white;
+    text-decoration: none;
+} 
+
+.coluna1 > a:hover ,#teste > a:hover,.coluna2 > a:hover {
+    color: rgb(90, 11, 236);
+}
+
+img{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(231, 220, 220, 0.486);
+    margin-bottom: 10px;
+}
+
+iframe{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(231, 220, 220, 0.486);
+    margin-bottom: 10px;
+
+}
+#habilidades{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 37%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(231, 220, 220, 0.486);
+}
+#Escanor, #Gogeta, #Sung, #Diavolo, #Metodo,#Broly,#GogetaBlue,#Stark,#Golden,#Vegeta,#Paikuhan{
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px ;
+}
+
+/*Configuração Dos Subtitulos*/
+#Escanor{
+    color: rgb(5, 5, 5);
+    background-image: linear-gradient(to bottom,#eef13f,#ef570e );
+    font-family:'Burn';
+    box-shadow: 0px 0px 8px 2px rgba(231, 127, 7, 0.58);
+
+}
+
+#kaguya{
+    color: rgb(5, 5, 5);
+    background-image: linear-gradient(to bottom,#f3260e,#0d4ef5 );
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px ;
+    font-family: 'Naruto';
+    box-shadow: 0px 0px 8px 2px rgb(128 92 201 / 42%);
+    
+}
+
+#Gogeta{
+    color: #d7b7b7;
+    background-image: linear-gradient(to bottom,#ff0000,rgba(0, 0, 0, 0.514));
+    font-family: 'Dragon';
+    font-weight: 100;
+    box-shadow: 0px 0px 8px 2px rgb(209 69 69 / 42%);
+    
+}
+
+#Diavolo{
+    color: #d2bed3;
+    background-image: linear-gradient(to bottom,rgba(217, 29, 249, 0.796),rgba(0, 0, 0, 0.761));
+    margin-top: 25px;
+    font-size: 16px;
+    font-family: 'Jojo';
+    box-shadow: 0px 0px 8px 2px rgb(163 76 209 / 42%);
+}
+
+#Sung{
+    color: #aea9cb;
+    background-image: linear-gradient(to bottom,#3712f9,rgba(11, 11, 11, 0.808));
+    font-size: 30px;
+    font-family: 'Solo';
+    font-weight: 100;
+    box-shadow: 0px 0px 8px 2px rgb(23 11 236 / 54%);
+}
+
+#Metodo{
+    color: #050505;
+    background-image: linear-gradient(to bottom,#e88c32,rgba(20, 19, 19, 0.882));
+    margin-right: 65px;
+    font-family: 'Titulo';
+    box-shadow: 0px 0px 8px 2px #d989624f;
+}
+
+#teste{
+    color: white;
+    list-style-type: none;
+    padding: 0px;
+}
+
+#Graficos{
+    width: 88%;
+    height: auto;
+}
